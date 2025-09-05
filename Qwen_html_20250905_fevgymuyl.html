@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Дилеры компании</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://vk.com/js/api/mini_apps_sdk.js?16" charset="utf-8"></script>
+</head>
+<body>
+  <div id="app">
+    <h1>Наши дилеры</h1>
+    <div class="filter">
+      <label for="cityFilter">Фильтр по городу:</label>
+      <input type="text" id="cityFilter" list="cities" placeholder="Выберите город" />
+      <button id="clearFilter">Сбросить</button>
+    </div>
+    <datalist id="cities"></datalist>
+    <div id="map"></div>
+  </div>
+
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=96c4ed66-a395-4b35-8699-4f411ccb50d0&lang=ru_RU" type="text/javascript"></script>
+  <script src="script.js"></script>
+</body>
+</html>
